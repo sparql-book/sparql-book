@@ -1,0 +1,29 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX dbpprop: <http://dbpedia.org/property/>
+
+SELECT ?country ?population ?area ?dollar
+WHERE {
+  {
+    # 面積に複数の値を持つ国があるのでサブクエリで最大値だけを取得
+    SELECT ?s (max(?areaTotal) AS ?area)
+    WHERE {
+      # 国ごとに面積を取得
+      ?s rdf:type dbpedia-owl:Country ;
+         dbpedia-owl:areaTotal ?areaTotal .
+    }
+    GROUP BY ?s
+  }
+  # 国ごとに国名、人口、GDP を取得
+  ?s rdfs:label ?country ;
+     dbpprop:populationCensus ?population ;
+     dbpprop:gdpNominalPerCapita ?gdp .
+  # GDPの値の記法が国によってマチマチだったので数値だけを抽出
+  BIND (replace(?gdp, '[^0-9.]', '', 'i') AS ?value)
+  # 抽出した値を文字列から数値に変換
+  BIND (xsd:integer(?value) AS ?dollar)
+  FILTER (langMatches(lang(?country), 'en'))
+}
+ORDER BY DESC (?dollar)
+

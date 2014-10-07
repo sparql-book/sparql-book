@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <!-- Twitter Bootstrap http://getbootstrap.com/2.3.2/ を取得してインストール -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+    <!-- jQuery http://jquery.com/ を取得してインストール -->
+    <script src="jquery.min.js"></script>
+    <script>
+    // SPARQL 検索を行う query() 関数を定義
+    function query() {
+      // HTML ページの <input id="endpoint" type="text"> から値を取得
+      var endpoint = $("#endpoint").val()
+      // HTML ページの <textarea id="sparql"> から値を取得
+      var sparql = $("#sparql").val()
+      // AJAX により SPARQL クエリを実行
+      $.ajax({
+        // SPARQL 検索を呼び出す URL の指定
+        url: endpoint + "?query=" + encodeURIComponent(sparql),
+        // 結果を JSON 形式で取得するための指定
+        dataType: "json",
+        // 返ってきた結果を下記の render 関数に渡す指定
+        success: render
+      })
+    }
+    // SPARQL 検索結果の表示を行う render() 関数を定義
+    function render(json) {
+      // SPARQL 検索の結果の JSON をデバッグ用にコンソールへ表示
+      console.log(json)
+      // HTML の表を生成（クラスは Bootstrap 用のデザイン指定）
+      var table = $("<table>").addClass("table table-bordered table-hover")
+      // SPARQL 検索の変数名を表のヘッダに表示
+      var vars = json.head.vars
+      var row = $("<tr>")
+      $.each(vars, function() {
+        row.append($("<th>").text(this))
+      })
+      table.append(row)
+      // SPARQL 検索の結果を１件ずつ表の行に追加
+      $.each(json.results.bindings, function(i, item) {
+        var row = $("<tr>")
+        $.each(vars, function() {
+          row.append($("<td>").text(item[this].value))
+        })
+        table.append(row)
+      })
+      // 完成した表を HTML に差し込む（クラスは Bootstrap 用の幅指定）
+      $("#result").addClass("span8").append(table)
+    }
+    </script>
+    <!-- 表の変数名１文字目を大文字にするための設定 -->
+    <style>
+    th:first-letter {
+       text-transform: capitalize;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="query" style="margin: 10px">
+      <h1>jQuery SPARQL</h1>
+      <form class="form-inline">
+        <label>SPARQL endpoint:</label>
+        <div class="input-append">
+          <!-- SPARQL エンドポイントの指定 -->
+          <input id="endpoint" class="span6" value="http://ja.dbpedia.org/sparql" type="text">
+          <!-- ボタンクリック時に上で定義した query() 関数を呼び出す -->
+          <button class="btn" type="button" onclick="query()">Query</button>
+        </div>
+      </form>
+      <!-- 検索に利用する SPARQL の指定 -->
+      <textarea id="sparql" class="span9" rows=20>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX prop-ja: <http://ja.dbpedia.org/property/>
+ 
+SELECT ?station ?year (SUM(?count) AS ?total)
+WHERE {
+  ?s rdf:type dbpedia-owl:Station ;
+     rdfs:label ?station ;
+     dbpedia-owl:passengersPerDay ?count .
+  OPTIONAL {
+    ?s prop-ja:統計年度 ?year .
+  }
+  FILTER (LANG(?station) = 'ja')
+}
+GROUP BY ?station ?year
+ORDER BY DESC(?total) DESC(?year)
+LIMIT 20
+      </textarea>
+    </div>
+    <!-- 結果を表示するためのプレースホルダ -->
+    <div id="result"></div>
+  </body>
+</html>

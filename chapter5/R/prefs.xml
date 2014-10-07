@@ -1,0 +1,196 @@
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
+ <head>
+  <variable name="pref"/>
+  <variable name="area"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="pref"><literal xml:lang="en">Hokkaido</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.34536e+10</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Iwate Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.52784e+10</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Fukushima Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.37825e+10</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Nagano Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.35852e+10</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Niigata Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.25825e+10</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Akita Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.16122e+10</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Gifu Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.06212e+10</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Aomori Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.60626e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Yamagata Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.32334e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Kagoshima Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.13242e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Hiroshima Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.47695e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Hyōgo Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.39613e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Shizuoka Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.77963e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Miyazaki Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.73599e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Kumamoto Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.40414e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Miyagi Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.28516e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Okayama Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.11232e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Kōchi Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.10487e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Shimane Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.70795e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Tochigi Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.40828e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Gunma Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.36316e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Ōita Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.33882e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Yamaguchi Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.11094e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Ibaraki Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.09558e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Mie Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.77722e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Ehime Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.67644e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Chiba Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.15615e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Aichi Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.15381e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Fukuoka Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.97101e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Wakayama Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.72567e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Kyoto Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.61271e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Yamanashi Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.46538e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Toyama Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.24722e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Fukui Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.18899e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Ishikawa Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.18522e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Tokushima Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.14495e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Nagasaki Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.10547e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Shiga Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.01736e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Saitama Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.797e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Nara Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.69109e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Tottori Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.50719e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Saga Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.43958e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Kanagawa Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.41584e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Okinawa Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.2713e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Tokyo</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.18766e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Osaka Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.89928e+09</literal></binding>
+  </result>
+  <result>
+   <binding name="pref"><literal xml:lang="en">Kagawa Prefecture</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.8617e+09</literal></binding>
+  </result>
+ </results>
+</sparql>

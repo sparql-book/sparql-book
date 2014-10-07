@@ -1,0 +1,20 @@
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
+ <head>
+  <variable name="mountain"/>
+  <variable name="height"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="mountain"><literal xml:lang="en">Mount Fuji</literal></binding>
+   <binding name="height"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3776.0</literal></binding>
+  </result>
+  <result>
+   <binding name="mountain"><literal xml:lang="en">Mount Ontake</literal></binding>
+   <binding name="height"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3067.0</literal></binding>
+  </result>
+  <result>
+   <binding name="mountain"><literal xml:lang="en">Mount Norikura</literal></binding>
+   <binding name="height"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3025.64</literal></binding>
+  </result>
+ </results>
+</sparql>

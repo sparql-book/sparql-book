@@ -1,0 +1,12 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+SELECT ?pref ?area
+WHERE {
+  ?s a yago:PrefecturesOfJapan ;
+     rdfs:label ?pref ;
+     dbpedia-owl:areaTotal ?area .
+  FILTER (lang(?pref) = 'en')
+}
+ORDER BY DESC(?area)

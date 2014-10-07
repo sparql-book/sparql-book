@@ -1,0 +1,874 @@
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
+ <head>
+  <variable name="country"/>
+  <variable name="population"/>
+  <variable name="area"/>
+  <variable name="dollar"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="country"><literal xml:lang="en">Monaco</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">35352</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.02019e+06</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">153177</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Liechtenstein</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">33307</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.6e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">143151</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Luxembourg</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">439539</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.5864e+09</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">107206</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Norway</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5136700</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.85178e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">101271</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Qatar</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1699435</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.1571e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">98329</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Switzerland</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7954700</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.1285e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">86145</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Macau</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">552503</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.95e+07</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">77353</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Australia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">21507717</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.69202e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">67722</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Nordic countries</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#double">25478.6</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.4258e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">63647</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Sweden</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">9644864</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.49997e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">57297</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Andorra</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">78115</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.6763e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">53383</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Austria</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">8504850</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.38716e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">52216</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Canada</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">33476688</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.98467e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">51871</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">England</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">53012456</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.30396e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">50566</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Faroe Islands</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">48351</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.399e+09</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">50300</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Germany</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">80219695</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.57168e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">47893</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Belgium</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">11099554</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.05282e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">47787</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Cayman Islands</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">56732</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.64179e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">47000</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Finland</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5180000</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.38424e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">46098</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Republic of Ireland</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4588252</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.02741e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">45888</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Kuwait</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2213403</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.782e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">45824</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Scotland</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5313600</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.87719e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">44378</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">United Arab Emirates</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4106427</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.36e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">43185</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">United Kingdom</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">63181775</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.4361e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">40879</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">New Zealand</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4242048</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.68021e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">40481</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Cascadia (independence movement)</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">15105870</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.38459e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">40217</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Japan</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">128056026</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.77944e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">39321</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">New Caledonia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">245580</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.8576e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">38921</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Israel</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7412200</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.077e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">38004</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Italy</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">59433744</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.01338e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">35123</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Spain</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">46815916</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.05992e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">30315</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">French Polynesia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">268270</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.16729e+09</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">27352</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Cyprus</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">838897</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.25144e+09</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">26389</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Oman</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2773479</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.09501e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">24764</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Slovenia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1964036</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.0273e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">23702</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">The Bahamas</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">254685</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.3878e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">22832</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Portugal</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">10562178</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.2212e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">21765</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Greece</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">10815197</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.31957e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">21617</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Malta</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">416055</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.16e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">20852</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Estonia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1294486</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.5227e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">20179</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Northern Ireland</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1810863</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.38435e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">19603</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Czech Republic</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">10436560</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.8866e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">18846</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Slovakia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5397036</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.9035e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">18792</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Uruguay</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3286314</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.76215e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">17204</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Lithuania</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3043429</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.53e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">16600</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Baltic states</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6206329</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.75015e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">16328</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Northern Cyprus</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">294906</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.355e+09</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">16158</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Barbados</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">277821</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.32e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">16151</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Latvia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2070371</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.45891e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">16138</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Chile</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">16341929</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.56096e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">15791</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Libya</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5670688</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.75954e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">14500</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Croatia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4284889</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.6594e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">13920</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Hungary</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">9937628</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.303e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">13872</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Antigua and Barbuda</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">81799</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.40298e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">13428</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Poland</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">38544513</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.12679e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">13334</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Wallis and Futuna</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">13484</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.42449e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">12640</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Malaysia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">28334135</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.29848e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">12243</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Argentina</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">40117096</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.7804e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">11679</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Venezuela</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">28946101</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.16445e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">11527</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Seychelles</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">90024</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.59e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">11226</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Panama</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3661868</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.5517e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">10916</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Nevis</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">12106</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.3e+07</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">10315</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Costa Rica</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.586</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.11e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">10166</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Suriname</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">492829</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.63821e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">8853</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Mauritius</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1291456</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.04e+09</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">8850</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Romania</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">20121641</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.38391e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">8775</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Colombia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">42888592</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.14175e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">8150</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Saint Lucia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">173765</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.17013e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7769</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Botswana</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2038228</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.81737e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7627</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">South Africa</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">51770560</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.22104e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7096</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Bulgaria</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7364570</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.10994e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7033</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Dominica</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">71293</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.51097e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7022</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Peru</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">28220764</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.28522e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6895</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Montenegro</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">625266</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.3812e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6881</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">China</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1339724852</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.59696e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6747</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Thailand</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">65479453</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.1312e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6572</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Cuba</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">11177743</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.09884e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6301</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Cuba</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">11167325</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.09884e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6301</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Namibia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2113077</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.25615e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5961</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Serbia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7186862</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.8361e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5906</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Dominican Republic</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">9378818</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.8442e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5763</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Dominican Republic</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">9445281</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.8442e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5763</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Algeria</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">37900000</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.38174e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5670</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Ecuador</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">14483499</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.83562e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5310</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Albania</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2821977</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.87489e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5000</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Republic of Macedonia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2022547</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.5713e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4935</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Bosnia and Herzegovina</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3791622</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.1197e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4865</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Jordan</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5611202</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.22994e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4674</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Belize</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">322453</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.2966e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4535</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Tonga</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">103036</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.48507e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4220</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Ukraine</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">48457102</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.03628e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3862</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">El Salvador</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5744113</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.10411e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3855</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Guyana</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">751223</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.1497e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3596</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Indonesia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">237424363</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.90457e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3499</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Swaziland</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1018449</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.7364e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3457</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Samoa</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">179186</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.842e+09</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3451</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Egypt</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">72798000</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.00245e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3213</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Sri Lanka</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">20277597</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.561e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3139</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Vanuatu</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">243304</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.219e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3036</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Autonomous Province of Kosovo and Metohija</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1956196</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.0909e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2965</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Papua New Guinea</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5190783</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.6284e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2491</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Bhutan</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">634982</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.8394e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2121</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Honduras</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7529403</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.12492e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2115</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Nicaragua</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6071045</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.30375e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1921</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Nigeria</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">140431790</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.23768e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1725</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Sudan</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">30894000</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.88607e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1604</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Kiribati</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">103500</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.11e+08</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1592</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">São Tomé and Príncipe</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">187356</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.001e+09</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1535</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Laos</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">4574848</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.368e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1509</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Zambia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">13092666</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">7.52618e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1473</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Yemen</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">19685000</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.27829e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1418</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">India</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1210193422</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.28759e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1389</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Lesotho</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">2031348</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.29628e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1372</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Cameroon</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">17463836</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">4.75442e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1268</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Mauritania</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1864236</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.0307e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1157</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Cambodia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">13388910</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.81035e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1108</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Kyrgyzstan</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5362800</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.99951e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1070</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Senegal</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">9967299</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.96839e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1057</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Ivory Coast</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">15366672</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.22463e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1053</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Tajikistan</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7564500</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.431e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1041</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Kenya</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">38610097</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.81309e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">976</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Burma</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">35442972</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.76578e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">915</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Chad</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">6279921</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.284e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">891</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Zimbabwe</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">13061239</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.90757e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">837</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Benin</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">9983884</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.14763e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">794</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Nepal</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">26494504</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.47181e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">743</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Rwanda</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">10515973</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.6338e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">730</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Afghanistan</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">15500000</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.52864e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">695</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Mozambique</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">21397000</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">8.01591e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">650</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Mali</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">14517176</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.24019e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">631</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Burkina Faso</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">14017262</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.742e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">602</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Tanzania</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">44928923</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">9.45203e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">599</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Guinea-Bissau</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1345479</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">3.61252e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">551</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Eritrea</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">5291370</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.176e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">546</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Ethiopia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">73750932</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.1043e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">513</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">North Korea</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">24052231</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.2054e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">506</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">The Gambia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">1882450</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.0689e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">502</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Guinea</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">7156407</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.45857e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">492</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Madagascar</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">12238914</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">5.87041e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">458</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Central African Republic</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3895150</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">6.22984e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">446</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Liberia</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">3476608</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.11369e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">436</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Niger</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">17138707</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.26826e+12</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">399</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Burundi</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">8053574</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">2.7834e+10</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">282</literal></binding>
+  </result>
+  <result>
+   <binding name="country"><literal xml:lang="en">Malawi</literal></binding>
+   <binding name="population"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">9933868</literal></binding>
+   <binding name="area"><literal datatype="http://www.w3.org/2001/XMLSchema#double">1.18484e+11</literal></binding>
+   <binding name="dollar"><literal datatype="http://www.w3.org/2001/XMLSchema#integer">253</literal></binding>
+  </result>
+ </results>
+</sparql>

@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+
+SELECT ?mountain ?height
+WHERE {
+  ?s rdf:type dbpedia-owl:Volcano ;
+     rdfs:label ?mountain ;
+     dbpedia-owl:locatedInArea dbpedia:Japan ;
+     dbpedia-owl:elevation ?height .
+  FILTER (lang(?mountain) = 'en')
+}
+ORDER BY DESC(?height)
+LIMIT 3
+

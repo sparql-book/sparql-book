@@ -1,0 +1,6 @@
+
+{ "head": { "link": [], "vars": ["mountain", "height"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "mountain": { "type": "literal", "xml:lang": "en", "value": "Mount Fuji" }	, "height": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#double", "value": "3776.0" }},
+    { "mountain": { "type": "literal", "xml:lang": "en", "value": "Mount Ontake" }	, "height": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#double", "value": "3067.0" }},
+    { "mountain": { "type": "literal", "xml:lang": "en", "value": "Mount Norikura" }	, "height": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#double", "value": "3025.64" }} ] } }
