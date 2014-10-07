@@ -11,8 +11,8 @@ AUTHORS
 * Shuichi Kawashima
 * Toshiaki Katayama
 
-LISENCE
+LICENSE
 =======
 
-CC-BY ?
+MIT
 
