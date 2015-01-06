@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="d3sparql.js"></script>
+    <script>
+    function exec() {
+      var endpoint = d3.select("#endpoint").property("value")
+      var sparql = d3.select("#sparql").property("value")
+      d3sparql.query(endpoint, sparql, render)
+    }
+    function render(json) {
+      var config = {
+        "radius": 10,
+        "charge": -200,
+        "distance": 50,
+        "width": 1000,
+        "height": 750,
+      }
+      d3sparql.forcegraph(json, config)
+    }
+    function toggle() {
+      d3sparql.toggle()
+    }
+    </script>
+  </head>
+  <body>
+    <div id="query" style="margin: 10px">
+      <h1>d3forcegraph</h1>
+      <form class="form-inline">
+        <label>SPARQL endpoint:</label>
+        <div class="input-append">
+          <input id="endpoint" class="span6" value="http://ja.dbpedia.org/sparql" type="text">
+          <button class="btn" type="button" onclick="exec()">Query</button>
+          <button class="btn" type="button" onclick="toggle()"><i id="button" class="icon-chevron-up"></i></button>
+        </div>
+      </form>
+      <textarea id="sparql" class="span9" rows=15>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX prop-ja: <http://ja.dbpedia.org/property/>
+
+SELECT ?pref1 ?pref2 ?pref1_label ?pref2_label
+WHERE {
+  ?pref1 prop-ja:隣接都道府県 ?pref2 .
+  ?pref1 rdfs:label ?pref1_label .
+  ?pref2 rdfs:label ?pref2_label .
+  FILTER (LANG(?pref1_label) = 'ja')
+  FILTER (LANG(?pref2_label) = 'ja')
+}
+      </textarea>
+    </div>
+  </body>
+</html>
