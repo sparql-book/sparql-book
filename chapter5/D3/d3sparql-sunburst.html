@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="d3sparql.js"></script>
+    <script>
+    function exec() {
+      var endpoint = d3.select("#endpoint").property("value")
+      var sparql = d3.select("#sparql").property("value")
+      d3sparql.query(endpoint, sparql, render)
+    }
+    function render(json) {
+      var config = {}
+      d3sparql.sunburst(json, config)
+    }
+    function toggle() {
+      d3sparql.toggle()
+    }
+    </script>
+  </head>
+  <body>
+    <div id="query" style="margin: 10px">
+      <h1>d3sunburst</h1>
+      <form class="form-inline">
+        <label>SPARQL endpoint:</label>
+        <div class="input-append">
+          <input id="endpoint" class="span6" value="http://ja.dbpedia.org/sparql" type="text">
+          <button class="btn" type="button" onclick="exec()">Query</button>
+          <button class="btn" type="button" onclick="toggle()"><i id="button" class="icon-chevron-up"></i></button>
+        </div>
+      </form>
+      <textarea id="sparql" class="span9" rows=15>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX prop-ja: <http://ja.dbpedia.org/property/>
+
+SELECT DISTINCT ?root_label ?parent_label ?child_label
+WHERE {
+  VALUES ?root_label { "東京駅"@ja }
+  ?root rdfs:label ?root_label .
+  ?root prop-ja:次の駅{1,6} ?child .
+  ?parent prop-ja:次の駅 ?child .
+  ?parent rdfs:label ?parent_label .
+  ?child rdfs:label ?child_label .
+  FILTER (LANG(?parent_label) = 'ja')
+  FILTER (LANG(?child_label) = 'ja')
+}
+      </textarea>
+    </div>
+  </body>
+</html>
