@@ -13,10 +13,10 @@
     }
     function render(json) {
       var config = {
-        width: 800,
-        margin: 50
+        height: 1000,
+        width: 1200
       }
-      d3sparql.sunburst(json, config)
+      d3sparql.dendrogram(json, config)
     }
     function toggle() {
       d3sparql.toggle()
@@ -25,7 +25,7 @@
   </head>
   <body>
     <div id="query" style="margin: 10px">
-      <h1>d3sunburst</h1>
+      <h1>d3dendrogram</h1>
       <form class="form-inline">
         <label>SPARQL endpoint:</label>
         <div class="input-append">
@@ -42,9 +42,9 @@ PREFIX prop-ja: <http://ja.dbpedia.org/property/>
 
 SELECT DISTINCT ?root_label ?parent_label ?child_label
 WHERE {
-  VALUES ?root_label { "東京駅"@ja }
+  VALUES ?root_label { "新宿駅"@ja }
   ?root rdfs:label ?root_label .
-  ?root prop-ja:次の駅{1,6} ?child .
+  ?root prop-ja:次の駅{1,5} ?child .
   ?parent prop-ja:次の駅 ?child .
   ?parent rdfs:label ?parent_label .
   ?child rdfs:label ?child_label .
