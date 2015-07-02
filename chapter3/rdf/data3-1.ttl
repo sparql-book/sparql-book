@@ -1,0 +1,148 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia-ja: <http://ja.dbpedia.org/resource/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix prop-ja: <http://ja.dbpedia.org/property/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://ja.dbpedia.org/resource/ビートたけし>
+  rdf:type        dbpedia-owl:Person ;
+  rdfs:label        "ビートたけし"@ja ;
+  prop-ja:本名      "北野 武（きたの たけし）"@ja ;
+  dbpedia-owl:birthDate  "1947-01-18+09:00"^^<http://www.w3.org/2001/XMLSchema#date> ;
+  dbpedia-owl:company   dbpedia-ja:オフィス北野 .
+
+<http://ja.dbpedia.org/resource/北野武>
+  rdfs:label                      "北野武"@ja ;
+  dbpedia-owl:wikiPageRedirects   dbpedia-ja:ビートたけし .
+
+<http://ja.dbpedia.org/resource/オフィス北野>
+  rdfs:label                      "オフィス北野"@ja ;
+  dbpedia-owl:numberOfEmployees  33 .
+
+# 映画データ
+<http://ja.dbpedia.org/resource/Dolls_(映画)>
+  rdfs:label        "Dolls (映画)"@ja ;
+  dbpedia-owl:director  dbpedia-ja:北野武 ;
+  dbpedia-owl:starring dbpedia-ja:三橋達也 , dbpedia-ja:菅野美穂 , dbpedia-ja:西島秀俊 ,
+                       dbpedia-ja:松原智恵子 ;
+  prop-ja:上映時間  113 ;
+  dbpedia-owl:musicComposer dbpedia-ja:久石譲 .
+<http://ja.dbpedia.org/resource/HANA-BI>
+  rdfs:label        "HANA-BI"@ja ;
+  dbpedia-owl:director  dbpedia-ja:ビートたけし ;
+  dbpedia-owl:starring  dbpedia-ja:ビートたけし , dbpedia-ja:寺島進 , dbpedia-ja:大杉漣 ,
+                        dbpedia-ja:岸本加世子 ;
+  prop-ja:上映時間  103 ;
+  dbpedia-owl:musicComposer dbpedia-ja:久石譲 .
+<http://ja.dbpedia.org/resource/ソナチネ_(映画)>
+  rdfs:label        "ソナチネ (映画)"@ja ;
+  dbpedia-owl:director   dbpedia-ja:ビートたけし ;
+  dbpedia-owl:starring   dbpedia-ja:ビートたけし , dbpedia-ja:国舞亜矢 ;
+  prop-ja:上映時間  93 ;
+  dbpedia-owl:musicComposer dbpedia-ja:久石譲 .
+<http://ja.dbpedia.org/resource/その男、凶暴につき>
+  rdfs:label        "その男、凶暴につき"@ja ;
+  dbpedia-owl:director   dbpedia-ja:北野武 ;
+  dbpedia-owl:starring   dbpedia-ja:佐野史郎 , dbpedia-ja:川上麻衣子 ,
+                         dbpedia-ja:ビートたけし , 
+                         <http://ja.dbpedia.org/resource/白竜_(俳優)> ;
+  prop-ja:上映時間  103 ;
+  dbpedia-owl:musicComposer dbpedia-ja:久米大作 .
+<http://ja.dbpedia.org/resource/監督・ばんざい!>
+  rdfs:label        "監督・ばんざい!"@ja ;
+  dbpedia-owl:director  dbpedia-ja:北野武 ;
+  dbpedia-owl:starring  dbpedia-ja:鈴木杏 , dbpedia-ja:江守徹 , dbpedia-ja:岸本加世子 ,
+                        dbpedia-ja:ビートたけし ;
+  prop-ja:上映時間  104 ;
+  foaf:homepage     <http://www.office-kitano.co.jp/banzai/> ;
+  dbpedia-owl:musicComposer dbpedia-ja:池辺晋一郎 .
+<http://ja.dbpedia.org/resource/TAKESHIS'>
+  rdfs:label        "TAKESHIS'"@ja ;
+  dbpedia-owl:director  dbpedia-ja:北野武 ;
+  dbpedia-owl:starring    dbpedia-ja:ビートたけし ;
+  prop-ja:上映時間  107 ;
+  foaf:homepage     <http://www.office-kitano.co.jp/takeshis/> ;
+  dbpedia-owl:musicComposer dbpedia-ja:藤川祥虎 .
+<http://ja.dbpedia.org/resource/BROTHER>
+  rdfs:label        "BROTHER"@ja ;
+  dbpedia-owl:director   dbpedia-ja:北野武 ;
+  dbpedia-owl:starring   <http://ja.dbpedia.org/resource/オマー・エップス> ,
+                         dbpedia-ja:ビートたけし ;
+  prop-ja:上映時間  114 ;
+  dbpedia-owl:musicComposer dbpedia-ja:久石譲 .
+<http://ja.dbpedia.org/resource/みんな?やってるか!>
+  rdfs:label        "みんな?やってるか!"@ja ;
+  dbpedia-owl:director   dbpedia-ja:ビートたけし  ;
+  dbpedia-owl:starring   <http://ja.dbpedia.org/resource/白竜_(俳優)> ,
+                         dbpedia-ja:ビートたけし , 
+                         <http://ja.dbpedia.org/resource/ダンカン_(お笑い芸人)> ;
+  prop-ja:上映時間  110 .
+<http://ja.dbpedia.org/resource/座頭市_(2003年の映画)>
+  rdfs:label        "座頭市 (2003年の映画)"@ja ;
+  dbpedia-owl:director    dbpedia-ja:ビートたけし ;
+  dbpedia-owl:starring    dbpedia-ja:ビートたけし, dbpedia-ja:浅野忠信 ;
+  prop-ja:上映時間  115 ;
+  foaf:homepage     <http://www.office-kitano.co.jp/zatoichi/> ;
+  dbpedia-owl:musicComposer dbpedia-ja:鈴木慶一 .
+<http://ja.dbpedia.org/resource/キッズ・リターン>
+  rdfs:label        "キッズ・リターン"@ja ;
+  dbpedia-owl:director   dbpedia-ja:北野武 , dbpedia-ja:清水浩;
+  dbpedia-owl:starring   dbpedia-ja:森本レオ , dbpedia-ja:山谷初男 , dbpedia-ja:石橋凌 ,
+                         dbpedia-ja:金子賢 , dbpedia-ja:安藤政信 , dbpedia-ja:平岡祐太 ,
+                         dbpedia-ja:三浦貴大 ;
+  prop-ja:上映時間  107 , 108 ;
+  dbpedia-owl:musicComposer dbpedia-ja:久石譲 .
+<http://ja.dbpedia.org/resource/あの夏、いちばん静かな海。>
+  rdfs:label        "あの夏、いちばん静かな海。"@ja ;
+  dbpedia-owl:director    dbpedia-ja:ビートたけし ;
+  dbpedia-owl:starring    dbpedia-ja:大島弘子 , dbpedia-ja:真木蔵人 ;
+  prop-ja:上映時間  101 ;
+  dbpedia-owl:musicComposer dbpedia-ja:久石譲 .
+<http://ja.dbpedia.org/resource/3-4X10月>
+  rdfs:label        "3-4X10月"@ja ;
+  dbpedia-owl:director   dbpedia-ja:ビートたけし ;
+  dbpedia-owl:starring   dbpedia-ja:ビートたけし , dbpedia-ja:柳憂怜 ,
+                         dbpedia-ja:石田ゆり子 ;
+  prop-ja:上映時間  96 .
+<http://ja.dbpedia.org/resource/アウトレイジ_ビヨンド>
+  rdfs:label        "アウトレイジ ビヨンド"@ja ;
+  dbpedia-owl:director   dbpedia-ja:ビートたけし ;
+  dbpedia-owl:starring   dbpedia-ja:中尾彬 , dbpedia-ja:新井浩文 , dbpedia-ja:松重豊 ,
+                         dbpedia-ja:ビートたけし , dbpedia-ja:小日向文世 , 
+                         dbpedia-ja:西田敏行 , dbpedia-ja:桐谷健太 , dbpedia-ja:神山繁 ,
+                         dbpedia-ja:塩見三省 , dbpedia-ja:三浦友和 , dbpedia-ja:高橋克典 , 
+                         dbpedia-ja:加瀬亮 , dbpedia-ja:中野英雄 ;
+  prop-ja:上映時間  112 ;
+  dbpedia-owl:musicComposer dbpedia-ja:鈴木慶一 .
+<http://ja.dbpedia.org/resource/アウトレイジ_(2010年の映画)>
+  rdfs:label        "アウトレイジ (2010年の映画)"@ja ;
+  dbpedia-owl:director   dbpedia-ja:ビートたけし ;
+  dbpedia-owl:starring   dbpedia-ja:小日向文世 , dbpedia-ja:北村総一朗 , 
+                         dbpedia-ja:中野英雄 , dbpedia-ja:ビートたけし , 
+                         dbpedia-ja:國村隼 , dbpedia-ja:椎名桔平 , dbpedia-ja:三浦友和 , 
+                         dbpedia-ja:塚本高史 , dbpedia-ja:石橋蓮司 , dbpedia-ja:加瀬亮 , 
+                         dbpedia-ja:杉本哲太 ;
+  prop-ja:上映時間  109 ;
+  dbpedia-owl:musicComposer dbpedia-ja:鈴木慶一 .
+<http://ja.dbpedia.org/resource/アキレスと亀_(映画)>
+  rdfs:label        "アキレスと亀 (映画)"@ja ;
+  dbpedia-owl:director   dbpedia-ja:北野武 ;
+  dbpedia-owl:starring   dbpedia-ja:北野武 , dbpedia-ja:風祭ゆき , dbpedia-ja:柳憂怜 , 
+                         dbpedia-ja:樋口可南子 , dbpedia-ja:麻生久美子 , 
+                         dbpedia-ja:伊武雅刀 , dbpedia-ja:中尾彬 , dbpedia-ja:大杉漣 ;
+  prop-ja:上映時間  119 ;
+  foaf:homepage     <http://www.office-kitano.co.jp/akiresu/> ;
+  dbpedia-owl:musicComposer dbpedia-ja:梶浦由記 .
+<http://ja.dbpedia.org/resource/それぞれのシネマ>
+  rdfs:label        "それぞれのシネマ"@ja;
+  dbpedia-owl:director   dbpedia-ja:ビートたけし ;
+  prop-ja:上映時間  119 .
+<http://ja.dbpedia.org/resource/龍三と七人の子分たち>
+  rdfs:label        "龍三と七人の子分たち"@ja ;
+  dbpedia-owl:director   dbpedia-ja:ビートたけし ;
+  dbpedia-owl:starring   dbpedia-ja:中尾彬 , dbpedia-ja:樋浦勉 , dbpedia-ja:藤竜也 ,
+                         dbpedia-ja:小野寺昭 , dbpedia-ja:伊藤幸純 , dbpedia-ja:品川徹 , 
+                         dbpedia-ja:近藤正臣 , dbpedia-ja:吉澤健 ;
+  foaf:homepage     <http://www.ryuzo7.jp/> ;
+  dbpedia-owl:musicComposer dbpedia-ja:鈴木慶一 .

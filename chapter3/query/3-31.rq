@@ -1,0 +1,12 @@
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+SELECT ?friend ?actor ?work
+WHERE
+{
+ ?friend foaf:interest ?actor .
+ SERVICE <http://dbpedia.org/sparql> 
+ {
+   ?work dbpedia-owl:starring ?actor . 
+ }
+}

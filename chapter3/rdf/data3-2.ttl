@@ -1,0 +1,5 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://example.org/friend/taro> foaf:interest dbpedia:Satomi_Ishihara .
+<http://example.org/friend/hanako> foaf:interest dbpedia:Haruka_Ayase .

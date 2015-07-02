@@ -1,0 +1,9 @@
+PREFIX dbpedia-ja: <http://ja.dbpedia.org/resource/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?cast
+{
+ ?film dbpedia-owl:director ?director FILTER (?director IN(dbpedia-ja:北野武, dbpedia-ja:ビートたけし)) .
+ ?film dbpedia-owl:starring ?cast
+} 
+ORDER BY ?cast

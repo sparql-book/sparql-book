@@ -1,0 +1,9 @@
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?film_label
+WHERE
+{
+ ?takeshi rdfs:label "ビートたけし"@ja .
+ ?takeshi  ^dbpedia-owl:director / rdfs:label ?film_label .
+}

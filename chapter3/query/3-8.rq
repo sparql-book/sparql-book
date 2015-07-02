@@ -1,0 +1,10 @@
+PREFIX dbpedia-ja: <http://ja.dbpedia.org/resource/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?film_name ?director
+{
+ ?film dbpedia-owl:director ?director ;
+  rdfs:label ?film_name .
+ FILTER (?director IN(dbpedia-ja:ビートたけし, dbpedia-ja:北野武))
+}

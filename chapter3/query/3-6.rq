@@ -1,0 +1,13 @@
+PREFIX dbpedia-ja: <http://ja.dbpedia.org/resource/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX prop-ja: <http://ja.dbpedia.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?film_name ?screen_time
+WHERE
+{
+ ?film dbpedia-owl:director dbpedia-ja:ビートたけし ;
+  prop-ja:上映時間 ?screen_time  ;
+  rdfs:label ?film_name .
+ FILTER (?screen_time < 100)
+}
