@@ -10,6 +10,7 @@ AUTHORS
 * Yoko Okabeppu
 * Shuichi Kawashima
 * Toshiaki Katayama
+* Akio Nagano
 
 LICENSE
 =======
