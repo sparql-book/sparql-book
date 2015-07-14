@@ -1,0 +1,8 @@
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX prop-ja: <http://ja.dbpedia.org/property/>
+
+SELECT (COUNT(?anime) AS ?count)
+WHERE {
+  ?anime a dbpedia-owl:Anime .
+  MINUS { ?anime prop-ja:出版社 ?publisher }
+}

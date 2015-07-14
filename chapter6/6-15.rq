@@ -1,0 +1,11 @@
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX prop-ja: <http://ja.dbpedia.org/property/>
+
+SELECT ?anime (COUNT (DISTINCT ?magazine) AS ?count)
+WHERE {
+  ?anime a dbpedia-owl:Anime ;
+    prop-ja:掲載誌 ?magazine .
+}
+GROUP BY ?anime 
+HAVING (COUNT (DISTINCT ?magazine) AS ?count) >= 2
+ORDER BY DESC (?count)

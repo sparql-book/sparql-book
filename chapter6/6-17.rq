@@ -1,0 +1,8 @@
+SELECT ?datatype (COUNT(?datatype) AS ?count)
+WHERE {
+  ?s ?p ?o .
+  FILTER(isLiteral(?o))
+  BIND(str(datatype(?o)) AS ?datatype)
+} 
+GROUP BY ?datatype
+ORDER BY DESC (?count)
