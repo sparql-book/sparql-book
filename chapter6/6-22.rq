@@ -1,5 +1,5 @@
-SELECT ?s ?uri
+SELECT ?s ?iri
 WHERE {
-  ?s ?p ?uri
-  FILTER(CONTAINS(str(?uri),"Kitano"))
+  ?s ?p ?iri
+  FILTER(CONTAINS(str(?iri),"Kitano"))
 }

@@ -1,10 +1,10 @@
 CONSTRUCT {
-  ?new_uri a <http://dbpedia.org/ontology/City> .
+  ?new_iri a <http://dbpedia.org/ontology/City> .
 }
 WHERE {
-  ?old_uri a <http://dbpedia.org/ontology/City> .
-  BIND(str(?old_uri) AS ?old_uri_string) 
+  ?old_iri a <http://dbpedia.org/ontology/City> .
+  BIND(str(?old_iri) AS ?old_iri_string) 
   BIND("http://ja.dbpedia.org/resource/" AS ?old_prefix)
   BIND("http://sparqlbook.jp/city/" AS ?new_prefix)
-  BIND(IRI(REPLACE(?old_uri_string, ?old_prefix, ?new_prefix)) AS ?new_uri)
+  BIND(IRI(REPLACE(?old_iri_string, ?old_prefix, ?new_prefix)) AS ?new_iri)
 }
