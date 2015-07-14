@@ -1,0 +1,6 @@
+SELECT ?type (COUNT(?type) AS ?count)
+WHERE {
+  ?s a ?type .
+}
+ORDER BY DESC(?count)
+LIMIT 100
