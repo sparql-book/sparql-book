@@ -1,0 +1,8 @@
+SELECT (AVG(?count) AS ?average)
+WHERE {
+  SELECT ?s (COUNT(?p) as ?count)
+  WHERE {
+    ?s ?p ?o .
+  } 
+  GROUP BY ?s
+}

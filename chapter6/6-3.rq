@@ -1,0 +1,10 @@
+SELECT (COUNT(*) AS ?count)
+WHERE {
+  { 
+    ?s ?p ?o .
+  } UNION {
+    GRAPH ?g { 
+      ?s ?p ?o .
+    } 
+  }
+}
