@@ -1,0 +1,10 @@
+SELECT DISTINCT ?s ?p ?text 
+WHERE {
+  {
+    ?s ?p ?text
+    FILTER (?text = "東京都"@ja)
+  } UNION {
+    ?s ?p ?text
+    FILTER (?text = "東京都")
+  }
+}

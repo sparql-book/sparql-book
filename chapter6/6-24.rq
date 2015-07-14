@@ -1,0 +1,4 @@
+SELECT ?uri (REPLACE(STR(?uri), "http://ja.dbpedia.org/resource/", "") AS ?name)
+WHERE {
+  ?uri a <http://dbpedia.org/ontology/City> 
+}

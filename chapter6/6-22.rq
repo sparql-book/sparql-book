@@ -1,0 +1,5 @@
+SELECT ?s ?uri
+WHERE {
+  ?s ?p ?uri
+  FILTER(CONTAINS(str(?uri),"Kitano"))
+}

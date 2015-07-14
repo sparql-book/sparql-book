@@ -1,0 +1,6 @@
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+SELECT ?anime 
+WHERE {
+  ?anime a dbpedia-owl:Anime .
+} 
+LIMIT 100
