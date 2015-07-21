@@ -1,0 +1,10 @@
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+SELECT ?datatype (COUNT(?datatype) AS ?count)
+WHERE {
+  ?s dbpedia-owl:birthDate ?o .
+  FILTER(isLiteral(?o))
+  BIND(STR(DATATYPE(?o)) AS ?datatype)
+} 
+GROUP BY ?datatype
+ORDER BY DESC (?count)

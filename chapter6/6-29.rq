@@ -1,0 +1,11 @@
+PREFIX : <http://sparqlbook.jp/book/>
+
+CONSTRUCT {
+  ?s :frequency ?count .
+}
+WHERE {
+  SELECT ?s ?p (COUNT(?o) AS ?count)
+  WHERE {
+    ?s ?p ?o .
+  }
+}

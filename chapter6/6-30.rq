@@ -1,0 +1,11 @@
+PREFIX : <http://sparqlbook.jp/book/>
+
+DELETE { ?subject :predicate ?oldObject . }
+INSERT { ?subject :predicate ?newObject . }
+WHERE {
+  ?s :predicate ?oldObject .
+  BIND(STR(?oldObject) AS ?oldObjectString)
+  BIND("http://example.org/g#" AS ?oldPrefix)
+  BIND(IRI(REPLACE(?oldObjectString, ?oldPrefix, "http://sparqlbook.jp/graph/")) AS ?newObject)
+  FILTER(STRSTARTS(?oldObjectString, ?oldPrefix))
+}
