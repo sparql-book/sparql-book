@@ -1,5 +1,5 @@
 SELECT ?s ?num
 WHERE {
   ?s ?p ?num
-  FILTER (?num >= 0 AND ?num <= 10 )
+  FILTER (?num >= 0 && ?num <= 10 )
 }
