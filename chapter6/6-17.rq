@@ -1,8 +1,11 @@
-SELECT ?datatype (COUNT(?datatype) AS ?count)
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX prop-ja: <http://ja.dbpedia.org/property/>
+
+SELECT ?anime (COUNT (DISTINCT ?magazine) AS ?count)
 WHERE {
-  ?s ?p ?o .
-  FILTER(isLiteral(?o))
-  BIND(str(datatype(?o)) AS ?datatype)
-} 
-GROUP BY ?datatype
+  ?anime a dbpedia-owl:Anime ;
+    prop-ja:掲載誌 ?magazine .
+}
+GROUP BY ?anime 
+HAVING (COUNT (DISTINCT ?magazine) AS ?count) >= 2
 ORDER BY DESC (?count)

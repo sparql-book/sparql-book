@@ -1,6 +1,8 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?s ?p ?text 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?s
 WHERE {
-  ?s ?p ?text .
-  FILTER(CONTAINS(str(?text), "SPARQL"))
+  ?s rdfs:label|foaf:name|skos:prefLabel "東京都"@ja
 }

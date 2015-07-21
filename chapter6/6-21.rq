@@ -1,6 +1,7 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?s ?p ?text 
+
+SELECT ?s ?text 
 WHERE {
-  ?s ?p ?text .
-  FILTER regex(?text, "^kitano", "i")
+  ?s rdfs:label ?text .
+  FILTER(CONTAINS(STR(?text), "東京"))
 }

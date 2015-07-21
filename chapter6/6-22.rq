@@ -1,5 +1,7 @@
-SELECT ?s ?iri
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?s ?text 
 WHERE {
-  ?s ?p ?iri
-  FILTER(CONTAINS(str(?iri),"Kitano"))
+  ?s rdfs:label ?text .
+  FILTER REGEX(?text, "^tokyo", "i")
 }

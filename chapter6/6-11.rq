@@ -1,6 +1,6 @@
-PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
-SELECT ?anime 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?type
 WHERE {
-  ?anime a dbpedia-owl:Anime .
-} 
-LIMIT 100
+  ?type ^a / rdfs:label "SPARQL"@en .
+}

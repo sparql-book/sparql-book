@@ -1,7 +1,6 @@
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
-SELECT  DISTINCT ?p
+SELECT ?anime 
 WHERE {
-  ?anime a dbpedia-owl:Anime ;
-    ?p ?o .
+  ?anime a dbpedia-owl:Anime .
 } 
 LIMIT 100

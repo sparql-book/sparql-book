@@ -1,4 +1,5 @@
-SELECT ?iri (REPLACE(STR(?iri), "http://ja.dbpedia.org/resource/", "") AS ?name)
+SELECT ?s ?num
 WHERE {
-  ?iri a <http://dbpedia.org/ontology/City> 
+  ?s ?p ?num
+  FILTER (?num >= 0 AND ?num <= 10 )
 }
