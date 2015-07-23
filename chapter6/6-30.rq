@@ -1,11 +1,11 @@
 PREFIX : <http://sparqlbook.jp/book/>
 
-DELETE { ?subject :predicate ?old_object . }
-INSERT { ?subject :predicate ?new_object . }
+CONSTRUCT {
+  ?s :frequency ?count .
+}
 WHERE {
-  ?s :predicate ?old_object .
-  BIND(STR(?old_object) AS ?old_object_string)
-  BIND("http://example.org/g#" AS ?old_prefix)
-  BIND(IRI(REPLACE(?old_object_string, ?old_prefix, "http://sparqlbook.jp/graph/")) AS ?new_object)
-  FILTER(STRSTARTS(?old_object_string, ?old_prefix))
+  SELECT ?s ?p (COUNT(?o) AS ?count)
+  WHERE {
+    ?s ?p ?o .
+  }
 }
