@@ -9,10 +9,11 @@ WHERE
     SELECT ?film (COUNT(?cast) AS ?num_of_cast)
     WHERE
     {
-      ?film dbpedia-owl:director ?director FILTER (?director IN(dbpedia-ja:北野武, dbpedia-ja:ビートたけし)) .
-      ?film dbpedia-owl:starring ?cast .
+      ?film dbpedia-owl:director ?director ;
+        dbpedia-owl:starring ?cast .
+      FILTER (?director IN(dbpedia-ja:北野武, dbpedia-ja:ビートたけし)) .
     } GROUP BY ?film ORDER BY DESC (?num_of_cast) LIMIT 1
   }
-  ?film rdfs:label ?film_name .
-  ?film dbpedia-owl:starring ?casts .
+  ?film rdfs:label ?film_name ;
+    dbpedia-owl:starring ?casts .
 }

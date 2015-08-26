@@ -7,6 +7,6 @@ WHERE
 {
   VALUES ?director { dbpedia-ja:北野武 dbpedia-ja:ビートたけし}
 
-  ?film dbpedia-owl:director ?director .
-  ?film rdfs:label ?film_name .
+  ?film dbpedia-owl:director ?director ;
+    rdfs:label ?film_name .
 }

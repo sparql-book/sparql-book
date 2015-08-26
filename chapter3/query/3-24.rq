@@ -5,13 +5,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?film_name ?director ?cast
 WHERE
 {
-  VALUES (?director ?cast) 
- {
-   (dbpedia-ja:北野武 dbpedia-ja:岸本加世子)
-   (dbpedia-ja:ビートたけし dbpedia-ja:岸本加世子)
- }
+  VALUES (?director ?cast)
+  {
+    (dbpedia-ja:北野武 dbpedia-ja:岸本加世子)
+    (dbpedia-ja:ビートたけし dbpedia-ja:岸本加世子)
+  }
 
-  ?film dbpedia-owl:director ?director .
-  ?film dbpedia-owl:starring ?cast .
-  ?film rdfs:label ?film_name .
+  ?film dbpedia-owl:director ?director ;
+    dbpedia-owl:starring ?cast ;
+    rdfs:label ?film_name .
 }

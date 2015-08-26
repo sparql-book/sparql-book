@@ -6,9 +6,10 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?film_name ?screen_time ?hour ?minute ?hour_and_minute
 WHERE
 {
-  ?film dbpedia-owl:director ?director FILTER (?director IN(dbpedia-ja:北野武, dbpedia-ja:ビートたけし)) .
-  ?film prop-ja:上映時間 ?screen_time .
-  ?film rdfs:label ?film_name .
+  ?film dbpedia-owl:director ?director ;
+    prop-ja:上映時間 ?screen_time ;
+    rdfs:label ?film_name .
+  FILTER (?director IN(dbpedia-ja:北野武, dbpedia-ja:ビートたけし)) .
   BIND (60 AS ?min_per_hour)
   BIND (FLOOR(?screen_time/?min_per_hour) AS ?hour)
   BIND ((?screen_time - (?min_per_hour*?hour)) AS ?minute)

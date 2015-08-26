@@ -1,16 +1,16 @@
 PREFIX dbpedia-ja: <http://ja.dbpedia.org/resource/>
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
-PREFIX foaf:  <http://xmlns.com/foaf/0.1/> 
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?film_name ?homepage ?music_composer 
 WHERE
 {
- ?film dbpedia-owl:director dbpedia-ja:ビートたけし .
- ?film rdfs:label ?film_name .
- OPTIONAL 
- {
-   ?film foaf:homepage ?homepage .
-   ?film dbpedia-owl:musicComposer ?music_composer .
- }
+  ?film dbpedia-owl:director dbpedia-ja:ビートたけし ;
+    rdfs:label ?film_name .
+  OPTIONAL
+  {
+    ?film foaf:homepage ?homepage ;
+      dbpedia-owl:musicComposer ?music_composer .
+  }
 }

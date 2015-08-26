@@ -3,8 +3,8 @@ PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
 PREFIX prop-ja: <http://ja.dbpedia.org/property/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?director 
- (COUNT(?film) AS ?count) 
+SELECT ?director
+ (COUNT(?film) AS ?count)
  (MAX(?screen_time) AS ?longest)
  (MIN(?screen_time) AS ?shortest)
  (SUM(?screen_time) AS ?sum)
@@ -13,7 +13,9 @@ SELECT ?director
  (SAMPLE(?film_name) AS ?sample_film)
 WHERE
 {
- ?film dbpedia-owl:director ?director FILTER (?director IN(dbpedia-ja:北野武, dbpedia-ja:ビートたけし)) .
- ?film prop-ja:上映時間 ?screen_time .
- ?film rdfs:label ?film_name .
-} GROUP BY ?director
+  ?film dbpedia-owl:director ?director ;
+    prop-ja:上映時間 ?screen_time ;
+    rdfs:label ?film_name .
+  FILTER (?director IN(dbpedia-ja:北野武, dbpedia-ja:ビートたけし)) .
+}
+GROUP BY ?director

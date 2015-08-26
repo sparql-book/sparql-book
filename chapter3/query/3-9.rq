@@ -6,7 +6,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?film_name ?homepage
 WHERE
 {
- ?film dbpedia-owl:director dbpedia-ja:ビートたけし .
- ?film rdfs:label ?film_name .
- ?film foaf:homepage ?homepage .
+  ?film dbpedia-owl:director dbpedia-ja:ビートたけし ;
+    rdfs:label ?film_name ;
+    foaf:homepage ?homepage .
 }
