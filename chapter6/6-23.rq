@@ -2,5 +2,5 @@ SELECT ?s ?iri
 WHERE {
   ?s ?p ?iri .
   FILTER(isIRI(?iri))
-  FILTER(CONTAINS(STR(?iri), "Tokyo"))
+  FILTER(CONTAINS(STR(?iri), "Person"))
 }

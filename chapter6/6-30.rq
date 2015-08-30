@@ -1,11 +1,12 @@
 PREFIX : <http://sparqlbook.jp/book/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 CONSTRUCT {
-  ?s :frequency ?count .
+  ?s :nick_name_count ?count .
 }
 WHERE {
-  SELECT ?s ?p (COUNT(?o) AS ?count)
+  SELECT ?s (COUNT(?nick_name) AS ?count)
   WHERE {
-    ?s ?p ?o .
+    ?s foaf:nick ?nick_name .
   }
 }

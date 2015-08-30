@@ -1,6 +1,6 @@
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
 
-SELECT  DISTINCT ?p SAMPLE(?o)
+SELECT  DISTINCT ?p (SAMPLE(?o) AS ?sample_value)
 WHERE {
   ?anime a dbpedia-owl:Anime ;
     ?p ?o .

@@ -2,5 +2,5 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?type
 WHERE {
-  ?type ^a / rdfs:label "SPARQL"@en .
+  ?type ^a / rdfs:label "東京都"@ja .
 }
