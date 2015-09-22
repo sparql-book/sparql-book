@@ -40,7 +40,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
 PREFIX prop-ja: <http://ja.dbpedia.org/property/>
 
-SELECT DISTINCT ?root_label ?parent_label ?child_label
+SELECT ?root_label ?parent_label ?child_label
 WHERE {
   VALUES ?root_label { "東京駅"@ja }
   ?root rdfs:label ?root_label .
@@ -50,7 +50,7 @@ WHERE {
   ?child rdfs:label ?child_label .
   FILTER (LANG(?parent_label) = 'ja')
   FILTER (LANG(?child_label) = 'ja')
-}
+} GROUP BY ?root_label ?parent_label ?child_label
       </textarea>
     </div>
   </body>
