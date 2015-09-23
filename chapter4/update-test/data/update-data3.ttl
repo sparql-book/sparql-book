@@ -1,0 +1,4 @@
+@prefix : <http://sparqlbook.jp/>
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+:data3 rdfs:label "This is a triple of update-data3.ttl" .

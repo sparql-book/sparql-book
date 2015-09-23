@@ -4,5 +4,5 @@ PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
 SELECT DISTINCT ?work
 WHERE
 {
- ?work (dbpedia-owl:director | dbpedia-owl:starring ) dbpedia-ja:ビートたけし . 
+ ?work dbpedia-owl:director | dbpedia-owl:starring dbpedia-ja:ビートたけし . 
 }

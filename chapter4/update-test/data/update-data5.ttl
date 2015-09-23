@@ -1,0 +1,13 @@
+@prefix : <http://sparqlbook.jp/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+:book :author :fumihiro .
+:fumihiro foaf:givenName "Fumihiro" .
+:book :author :shuichi .
+:shuichi foaf:givenName "Shuichi" . 
+:book :author :yoko .
+:yoko foaf:givenName "Yoko" . 
+:book :author :yasunori .
+:yasunori foaf:givenName "Yasunori" .
+:book :author :toshiaki .
+:toshiaki foaf:givenName "Toshiaki" .

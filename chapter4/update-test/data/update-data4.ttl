@@ -1,0 +1,5 @@
+@prefix : <http://sparqlbook.jp/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+:book :author :yoko .
+:book :author :shuichi .
