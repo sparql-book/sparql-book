@@ -6,5 +6,4 @@ WHERE {
     ?p ?o ;
     !a ?o .
   ?o a ?class .
-} 
-GROUP BY ?p ?class
+}
