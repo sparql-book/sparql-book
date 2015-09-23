@@ -33,83 +33,85 @@ import com.hp.hpl.jena.update.UpdateAction;
  */
 public class DropExamples {
 
-	public static void main(String[] args) {
-	    	drop1();
-	    	drop2();
-			drop3();
-			drop4();
-			drop5();
-	}
-	/**
-	 * DROPの実行に先立ち、データをロードする。
-	 * @return ロード後のGraphStore
-	 */
-	public static GraphStore loadData() {
-		GraphStore graphStore = createGraphStore();
-		//load
+    public static void main(String[] args) {
+        drop1();
+        drop2();
+        drop3();
+        drop4();
+        drop5();
+    }
+
+    /**
+     * DROPの実行に先立ち、データをロードする。
+     * 
+     * @return ロード後のGraphStore
+     */
+    public static GraphStore loadData() {
+        GraphStore graphStore = createGraphStore();
+        // load
         String cmd = StrUtils.strjoin(" ;\n",
                 "LOAD <file:/data/rdf/update-data1.ttl> INTO GRAPH <http://sparqlbook.jp/graph1>",
                 "LOAD <file:/data/rdf/update-data1.ttl> INTO GRAPH <http://sparqlbook.jp/graph2>",
-                "LOAD <file:/data/rdf/update-data1.ttl>") ; //default graph
-        UpdateAction.parseExecute(cmd, graphStore) ;		
+                "LOAD <file:/data/rdf/update-data1.ttl>"); // default graph
+        UpdateAction.parseExecute(cmd, graphStore);
         return graphStore;
-	}
-	/**
-	 * 指定した名前付きグラフを削除する。
-	 */
-	public static void drop1()
-    {
-	    System.out.println("##### drop1 #####");
-	    GraphStore graphStore = loadData();
+    }
+
+    /**
+     * 指定した名前付きグラフを削除する。
+     */
+    public static void drop1() {
+        System.out.println("##### drop1 #####");
+        GraphStore graphStore = loadData();
         printDebug(graphStore, "before");
-        UpdateAction.parseExecute("DROP GRAPH <http://sparqlbook.jp/graph1>", graphStore) ;
+        UpdateAction.parseExecute("DROP GRAPH <http://sparqlbook.jp/graph1>", graphStore);
         printDebug(graphStore, "after");
     }
-	/**
-	 * デフォルトグラフを削除する。
-	 */
-	public static void drop2()
-    {
-	      System.out.println("##### drop2 #####");
-	        GraphStore graphStore = loadData();
-	        printDebug(graphStore, "before");
-        UpdateAction.parseExecute("DROP DEFAULT", graphStore) ;
+
+    /**
+     * デフォルトグラフを削除する。
+     */
+    public static void drop2() {
+        System.out.println("##### drop2 #####");
+        GraphStore graphStore = loadData();
+        printDebug(graphStore, "before");
+        UpdateAction.parseExecute("DROP DEFAULT", graphStore);
         printDebug(graphStore, "after");
     }
-	 /**
+
+    /**
      * 全ての名前付きグラフを削除する。
      */
-	public static void drop3()
-    {
-	    System.out.println("##### drop3 #####");
+    public static void drop3() {
+        System.out.println("##### drop3 #####");
         GraphStore graphStore = loadData();
         printDebug(graphStore, "before");
-        UpdateAction.parseExecute("DROP NAMED", graphStore) ;
+        UpdateAction.parseExecute("DROP NAMED", graphStore);
         printDebug(graphStore, "after");
     }
-	/**
-	 * 全てのグラフを削除する。
-	 */
-	public static void drop4()
-    {
-	    System.out.println("##### drop4 #####");
+
+    /**
+     * 全てのグラフを削除する。
+     */
+    public static void drop4() {
+        System.out.println("##### drop4 #####");
         GraphStore graphStore = loadData();
         printDebug(graphStore, "before");
-        UpdateAction.parseExecute("DROP ALL", graphStore) ;
+        UpdateAction.parseExecute("DROP ALL", graphStore);
         printDebug(graphStore, "after");
     }
+
     /**
      * 存在しないグラフを指定して削除する。 エラーになるかはRDFストアの実装依存。
      */
-	public static void drop5()
-    {
+    public static void drop5() {
         System.out.println("##### drop5 #####");
         GraphStore graphStore = loadData();
         printDebug(graphStore, "before");
-		UpdateAction.parseExecute("DROP GRAPH <http://sparqlbook.jp/not_exist_graph>", graphStore) ;//存在しないグラフ名
-		printDebug(graphStore, "after");
+        UpdateAction.parseExecute("DROP GRAPH <http://sparqlbook.jp/not_exist_graph>", graphStore);// 存在しないグラフ名
+        printDebug(graphStore, "after");
     }
-	
+
     /**
      * 新しいTDBのGraphStoreオブジェクトを生成して返す。
      * 
