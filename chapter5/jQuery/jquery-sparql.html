@@ -3,9 +3,11 @@
 <html>
   <head>
     <!-- Twitter Bootstrap http://getbootstrap.com/2.3.2/ を取得してインストール -->
-    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+    <!-- link rel="stylesheet" type="text/css" href="bootstrap.css" -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" />
     <!-- jQuery http://jquery.com/ を取得してインストール -->
-    <script src="jquery.min.js"></script>
+    <!-- script src="jquery.min.js"></script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
     // SPARQL 検索を行う query() 関数を定義
     function query() {
@@ -19,8 +21,9 @@
         url: endpoint + "?query=" + encodeURIComponent(sparql),
         // 結果を JSON 形式で取得するための指定
         dataType: "json",
-        // 返ってきた結果を下記の render 関数に渡す指定
-        success: render
+      }).done(function(data){ // コールバック関数
+        // 返ってきた結果をrender 関数に渡す指定
+        render(data);
       })
     }
     // SPARQL 検索結果の表示を行う render() 関数を定義
