@@ -7,5 +7,5 @@ WHERE {
     prop-ja:掲載誌 ?magazine .
 }
 GROUP BY ?anime 
-HAVING (COUNT (DISTINCT ?magazine) AS ?count) >= 2
+HAVING ((COUNT (DISTINCT ?magazine) AS ?count) >= 2)
 ORDER BY DESC (?count)
