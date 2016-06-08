@@ -43,7 +43,11 @@
       $.each(json.results.bindings, function(i, item) {
         var row = $("<tr>")
         $.each(vars, function() {
-          row.append($("<td>").text(item[this].value))
+          if (item[this] && item[this].value) {
+            row.append($("<td>").text(item[this].value));
+          } else {
+            row.append($("<td>").text(""));
+          }
         })
         table.append(row)
       })
