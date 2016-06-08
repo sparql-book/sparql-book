@@ -46,6 +46,9 @@ WHERE {
   ?root rdfs:label ?root_label .
   ?root prop-ja:次の駅{1,6} ?child .
   ?parent prop-ja:次の駅 ?child .
+  MINUS {
+    ?child prop-ja:次の駅 ?parent .
+  }
   ?parent rdfs:label ?parent_label .
   ?child rdfs:label ?child_label .
   FILTER (LANG(?parent_label) = 'ja')
