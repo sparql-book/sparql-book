@@ -45,12 +45,13 @@ PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
 
 SELECT DISTINCT ?s ?label ?population ?area (?density AS ?size)
 WHERE {
-  ?s a yago:PrefecturesOfJapan ;
+  ?s a yago:WikicatPrefecturesOfJapan ;
      rdfs:label ?label ;
      dbpedia-owl:populationTotal ?population ;
      dbpedia-owl:areaTotal ?area .
   BIND (xsd:float(?population)/xsd:float(?area/1000000) AS ?density)
   FILTER (lang(?label) = 'ja' )
+  FILTER (str(?s) != 'http://dbpedia.org/resource/Onjuku')
 }
 ORDER BY DESC(?density)
       </textarea>
